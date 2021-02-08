@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "367279924259",
+    "firebase_url": "https://stop-watch-e07b8.firebaseio.com",
+    "project_id": "stop-watch-e07b8",
+    "storage_bucket": "stop-watch-e07b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367279924259:android:e80e270860b1474a743d96",
+        "android_client_info": {
+          "package_name": "nguyenphanjim.stopwatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367279924259-mbdilqh2i6ffc4it9emvnvb7q8rqb2t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMOPjky-RNTZj91jNw_zInVT-nc-UY6QY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367279924259-mbdilqh2i6ffc4it9emvnvb7q8rqb2t6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
