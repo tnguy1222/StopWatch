@@ -1,9 +1,9 @@
 /*
-* Stop Watch version 2.0
-* Navigation bar version 2.0
+* Stop Watch version 3.0
+* Navigation bar version 3.0
 * Jim Nguyen
-* February 7, 2021
-* Navigation bar
+* March 7, 2021
+* Navigation Bar widget
 */
 import 'package:flutter/material.dart';
 import 'package:navigation_dot_bar/navigation_dot_bar.dart';
@@ -12,8 +12,8 @@ import 'package:stopwatch/Screens/count_down_screen.dart';
 import 'package:stopwatch/Screens/dash_board_screen.dart';
 import 'package:stopwatch/providers/authService.dart';
 import 'package:stopwatch/screens/auth_screen.dart';
-import 'package:stopwatch/screens/profile_screen.dart';
 import 'package:stopwatch/screens/sprint_screen.dart';
+import 'package:stopwatch/screens/user_sprint_screen.dart';
 
 class NavigationBar extends StatelessWidget {
   @override
@@ -61,21 +61,20 @@ class NavigationBar extends StatelessWidget {
             }
           },
         ),
-        // Info button that navigates to Profile Screen
+        // Button that navigates to User Sprint Screen
         BottomNavigationDotBarItem(
           icon: Icons.info,
           onTap: () {
             // Navigates to predefined screen, if clicks on the same screen ignore
             Navigator.popUntil(context, (route) {
-              if (route.settings.name == ProfileScreen.routeName) {
+              if (route.settings.name == UserSprintScreen.routeName) {
                 isNewRouteSameAsCurrent = true;
               }
               return true;
             });
-
             if (!isNewRouteSameAsCurrent) {
               Navigator.of(context)
-                  .pushReplacementNamed(ProfileScreen.routeName);
+                  .pushReplacementNamed(UserSprintScreen.routeName);
             }
           },
         ),
@@ -84,8 +83,9 @@ class NavigationBar extends StatelessWidget {
           icon: Icons.exit_to_app,
           onTap: () {
             // calls logout function in AuthService
-            Provider.of<AuthService>(context, listen: false).logout();
+
             Navigator.of(context).pushReplacementNamed(AuthScreen.routeName);
+            Provider.of<AuthService>(context, listen: false).logout();
           },
         ),
       ],

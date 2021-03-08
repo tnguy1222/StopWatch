@@ -1,9 +1,9 @@
 /*
 * Stop Watch
-* Account Controller version 2.0
+* Main version 3.0
 * Jim Nguyen
 * February 7, 2021
-* Main function
+* Main function that runs the application
 */
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
@@ -11,8 +11,10 @@ import 'package:stopwatch/providers/sprintService.dart';
 import 'package:stopwatch/screens/auth_screen.dart';
 import 'package:stopwatch/screens/count_down_screen.dart';
 import 'package:stopwatch/screens/dash_board_screen.dart';
-import 'package:stopwatch/screens/profile_screen.dart';
+import 'package:stopwatch/screens/sprint_detail_screen.dart';
 import 'package:stopwatch/screens/sprint_screen.dart';
+import 'package:stopwatch/screens/user_sprint_screen.dart';
+import 'package:stopwatch/screens/new_profile_screen.dart';
 
 import 'providers/authService.dart';
 
@@ -28,8 +30,12 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider.value(
           value: AuthService(),
         ),
-        ChangeNotifierProvider.value(
-          value: SprintService(),
+        ChangeNotifierProxyProvider<AuthService, SprintService>(
+          update: (ctx, auth, sprints) => SprintService(
+            auth.authToken,
+            auth.userId,
+            sprints == null ? [] : sprints.sprints,
+          ),
         ),
       ],
       child: Consumer<AuthService>(
@@ -56,12 +62,18 @@ class MyApp extends StatelessWidget {
             AuthScreen.routeName: (ctx) => AuthScreen(),
             //this route is mapped to Sprint Screen
             SprintScreen.routeName: (ctx) => SprintScreen(),
+            //this route is mapped to Sprints Screen
+            UserSprintScreen.routeName: (ctx) => UserSprintScreen(),
+            //this route is mapped to Sprints Screen
+            SprintDetailScreen.routeName: (ctx) => SprintDetailScreen(),
             //this route is mapped to Count Down Screen
             CountDownScreen.routeName: (ctx) => CountDownScreen(),
             //this route is mapped to Dashboard Screen
             DashboardScreen.routeName: (ctx) => DashboardScreen(),
             //this route is mapped to Profile Screen
-            ProfileScreen.routeName: (ctx) => ProfileScreen(),
+            NewProfileScreen.routeName: (ctx) => NewProfileScreen(),
+            //this route is mapped to Profile Screen
+            //ProfileScreen.routeName: (ctx) => ProfileScreen(),
           },
         ),
       ),

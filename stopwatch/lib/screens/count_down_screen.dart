@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 2.0
-* Count Down Screen version 2.0
+* Stop Watch version 3.0
+* Count Down Screen version 3.0
 * Jim Nguyen
-* February 7, 2021
+* March 7, 2021
 * Count Down Screen
 */
 import 'package:flutter/material.dart';

@@ -1,11 +1,12 @@
 /*
-* Stop Watch version 2.0
-* Dashboard Screen version 2.0
+* Stop Watch version 3.0
+* Dashboard Screen version 3.0
 * Jim Nguyen
-* February 7, 2021
+* March 7, 2021
 * Dashboard Screen
 */
 import 'package:flutter/material.dart';
+import 'package:stopwatch/widgets/app_drawer.dart';
 import 'package:stopwatch/widgets/nagivation_bar.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -16,6 +17,7 @@ class DashboardScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Stop Watch'),
       ),
+      drawer: AppDrawer(),
       body: Container(
         alignment: Alignment.center,
         child: Text(

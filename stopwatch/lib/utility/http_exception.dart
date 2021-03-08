@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 2.0
-* HttpException service version 2.0
+* Stop Watch version 3.0
+* HttpException service version 3.0
 * Jim Nguyen
-* February 7, 2021
+* March 7, 2021
 * HttpException class acts a error handler class
 */
 class HttpException implements Exception {

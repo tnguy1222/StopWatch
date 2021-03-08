@@ -1,13 +1,13 @@
 /*
-* Stop Watch version 2.0
-* Authentication Screen Screen version 2.0
+* Stop Watch version 3.0
+* Authentication Screen Screen version 3.0
 * Jim Nguyen
-* February 7, 2021
+* March 7, 2021
 * Authentication Screen
 */
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:stopwatch/models/user.dart';
+import 'package:stopwatch/models/credential.dart';
 import 'package:stopwatch/providers/authService.dart';
 
 import '../utility/http_exception.dart';
@@ -128,7 +128,7 @@ class _AuthCardState extends State<AuthCard> {
     setState(() {
       _isLoading = true;
     });
-    User credential = User(
+    Credential credential = Credential(
         email: _authData['email'].toString(), password: _authData['password']);
     try {
       if (_authMode == AuthMode.Login) {
@@ -233,7 +233,7 @@ class _AuthCardState extends State<AuthCard> {
                     validator: _authMode == AuthMode.Signup
                         ? (value) {
                             if (value != _passwordController.text) {
-                              return 'Passwords do not match!';
+                              return 'Password do not match!';
                             }
                           }
                         : null,
