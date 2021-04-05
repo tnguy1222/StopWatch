@@ -72,7 +72,7 @@ Stop Watch mobile application by Flutter and Firebase
 				<td> Spend time in designing and review deisgn templates</td>
 			</tr>
 		</tbody> 
-
+	</table>
 
 # Risk Management: 
 <table>
