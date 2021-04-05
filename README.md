@@ -32,7 +32,6 @@ Stop Watch mobile application by Flutter and Firebase
 				<td> Study from online source, Read documentation (flutter.dev) </td>
 				<td> Plan and study reasonably before development </td>
 			</tr>
-
 			<tr>
 				<td> Feature is too complicated </td>
 				<td> High </td>
@@ -47,7 +46,6 @@ Stop Watch mobile application by Flutter and Firebase
 				<td> Follow schedule closely </td>
 				<td> Plan for extra time on development </td>
 			</tr>
-
 <tr>
 				<td> Hardware failure </td>
 				<td> Low </td>
