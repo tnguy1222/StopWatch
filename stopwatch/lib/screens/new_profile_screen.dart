@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 3.0
-* Profile Screen version 3.0
+* Stop Watch version 4.0
+* Profile Screen version 4.0
 * Jim Nguyen
-* March 7, 2021
+* April 4, 2021
 * New Profile Screen
 */
 import 'package:flutter/material.dart';
@@ -38,7 +38,6 @@ class _NewProfileScreenState extends State<NewProfileScreen> {
       final userId = Provider.of<AuthService>(context).getUserId;
       print(userId);
       if (userId != null) {
-        print(userId);
         Provider.of<AuthService>(context).fetchAndSetUsers();
         _inputProfile =
             Provider.of<AuthService>(context, listen: false).findById(userId);

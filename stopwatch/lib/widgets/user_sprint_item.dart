@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 3.0
-* User Sprint Item Widget version 3.0
+* Stop Watch version 4.0
+* User Sprint Item Widget version 4.0
 * Jim Nguyen
-* March 7, 2021
+* April 4,2021
 * User Sprint Item Widget 
 */
 import 'package:flutter/material.dart';

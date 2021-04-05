@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 3.0
-* Count Down Screen version 3.0
+* Stop Watch version 4.0
+* Count Down Screen version 4.0
 * Jim Nguyen
-* March 7, 2021
+* April 4,2021
 * Count Down Screen
 */
 import 'package:flutter/material.dart';
@@ -67,6 +67,9 @@ class CountDownScreen extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
+          SizedBox(
+            height: 40,
+          ),
           Text(
             sprint.title.toUpperCase(),
             style: TextStyle(

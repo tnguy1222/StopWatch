@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 3.0
-* Sprint Service version 3.0
+* Stop Watch version 4.0
+* Sprint Service version 4.0
 * Jim Nguyen
-* March 7, 2021
+* April 4,2021
 * Sprint Service
 */
 import 'dart:convert';
@@ -42,7 +42,7 @@ class SprintService with ChangeNotifier {
   Future<void> addSprint(Sprint sprint) async {
     // firebase url connection
     final url =
-        'https://stop-watch-e07b8.firebaseio.com/sprints.json?auth=$authToken';
+        'https://stop-watch-9482c-default-rtdb.firebaseio.com/sprints.json?auth=$authToken';
     try {
       // add sprintinfomation to database using http request api
       final reponse = await http.post(
@@ -82,7 +82,7 @@ class SprintService with ChangeNotifier {
   Future<void> getAllSprints() async {
     // firebase url connection
     var url =
-        'https://stop-watch-e07b8.firebaseio.com/sprints.json?auth=$authToken&orderBy="creatorId"&equalTo="$userId"';
+        'https://stop-watch-9482c-default-rtdb.firebaseio.com/sprints.json?auth=$authToken&orderBy="creatorId"&equalTo="$userId"';
     try {
       // get sprintinfomation to database using http get request api
       final response = await http.get(url);
@@ -90,7 +90,7 @@ class SprintService with ChangeNotifier {
       if (extractedData == null) {
         return;
       }
-      // print(jsonDecode(response.body));
+      print(jsonDecode(response.body));
       final List<Sprint> completedSprints = [];
       extractedData.forEach(
         (sprintId, sprintData) {
@@ -109,6 +109,7 @@ class SprintService with ChangeNotifier {
 
       // catch error exception, print to console and thorws exception
     } catch (error) {
+      print(error.toString());
       throw (error);
     }
   }
@@ -120,7 +121,7 @@ class SprintService with ChangeNotifier {
   Future<void> deleteSprint(String id) async {
     // firebase url connection
     final url =
-        'https://stop-watch-e07b8.firebaseio.com/sprints/$id.json?auth=$authToken';
+        'https://stop-watch-9482c-default-rtdb.firebaseio.com/sprints/$id.json?auth=$authToken';
     final existingSprintIndex = _sprints.indexWhere((s) => s.id == id);
     // remove sprint at selected index
     var existingSprint = _sprints[existingSprintIndex];

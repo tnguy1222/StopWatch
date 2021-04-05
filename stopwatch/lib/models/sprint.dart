@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 3.0
-* Sprint Model version 3.0
+* Stop Watch version 4.0
+* Sprint Model version 4.0
 * Jim Nguyen
-* March 7, 2021
+* April 4, 2021
 * Sprint class acts as a Model
 */
 import 'package:flutter/foundation.dart';

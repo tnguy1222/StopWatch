@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 3.0
-* Authencation Service version 3.0
+* Stop Watch version 4.0
+* Authencation Service version 4.0
 * Jim Nguyen
-* March 7, 2021
+* April 4,2021
 * Authentication Service
 */
 import 'dart:convert';
@@ -64,7 +64,7 @@ class AuthService with ChangeNotifier {
   Future<void> signup(Credential credential) async {
     // firebase url connection
     final url =
-        'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBMOPjky-RNTZj91jNw_zInVT-nc-UY6QY';
+        'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCWaSHrDX1I_tblt4ro9Mt5yztIWRb0Khk';
     try {
       final response = await http.post(
         url,
@@ -99,7 +99,7 @@ class AuthService with ChangeNotifier {
   Future<void> login(Credential credential) async {
     // firebase url connection
     final url =
-        'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBMOPjky-RNTZj91jNw_zInVT-nc-UY6QY';
+        'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCWaSHrDX1I_tblt4ro9Mt5yztIWRb0Khk';
     try {
       // validate user credential with firebase database using http request api
       final response = await http.post(
@@ -145,7 +145,7 @@ class AuthService with ChangeNotifier {
   Future<void> addProfile(User user) async {
     // firebase url connection
     final url =
-        'https://stop-watch-e07b8.firebaseio.com/users.json?auth=$authToken';
+        'https://stop-watch-9482c-default-rtdb.firebaseio.com/users.json?auth=$authToken';
     try {
       final response = await http.post(
         url,
@@ -182,7 +182,7 @@ class AuthService with ChangeNotifier {
     if (userIndex >= 0) {
       // firebase url connection
       final url =
-          'https://stop-watch-e07b8.firebaseio.com/users/$id.json?auth=$authToken';
+          'https://stop-watch-9482c-default-rtdb.firebaseio.com/users/$id.json?auth=$authToken';
       await http.patch(
         url,
         body: json.encode(
@@ -208,7 +208,7 @@ class AuthService with ChangeNotifier {
   Future<void> fetchAndSetUsers() async {
     print('testing for query');
     var url =
-        'https://stop-watch-e07b8.firebaseio.com/users.json?auth=$authToken&orderBy="creatorId"&equalTo="$userId"';
+        'https://stop-watch-9482c-default-rtdb.firebaseio.com/users.json?auth=$authToken&orderBy="creatorId"&equalTo="$userId"';
     try {
       final response = await http.get(url);
       final extractedData = json.decode(response.body) as Map<String, dynamic>;

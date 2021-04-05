@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 3.0
-* Sprint Screen version 3.0
+* Stop Watch version 4.0
+* Sprint Screen version 4.0
 * Jim Nguyen
-* March 7, 2021
+* April 4,2021
 * Sprint Screen
 */
 import 'package:flutter/material.dart';

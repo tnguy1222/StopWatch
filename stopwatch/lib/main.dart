@@ -1,8 +1,8 @@
 /*
-* Stop Watch
-* Main version 3.0
+* Stop Watch version 4.0
+* Main version 4.0
 * Jim Nguyen
-* February 7, 2021
+* April 4,2021
 * Main function that runs the application
 */
 import 'package:provider/provider.dart';

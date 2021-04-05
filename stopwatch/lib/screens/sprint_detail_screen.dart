@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 3.0
-* Profile Screen version 3.0
+* Stop Watch version 4.0
+* Profile Screen version 4.0
 * Jim Nguyen
-* MArch 7, 2021
+* April 4,2021
 * Sprint Detail Screen
 */
 import 'package:flutter/material.dart';
@@ -25,82 +25,139 @@ class SprintDetailScreen extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              SizedBox(
-                height: 40,
-              ),
               Text(
-                '${completedSprint.title} Sprint Information',
+                'Sprint Information',
                 style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 26,
+                    color: Colors.black,
+                    fontSize: 45,
+                    fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                margin: EdgeInsets.only(bottom: 20.0),
+                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.lightBlue,
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 8,
+                      color: Colors.black26,
+                      offset: Offset(0, 2),
+                    )
+                  ],
                 ),
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Text(
-                'Sprint Title',
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 40,
+                child: Text(
+                  'Sprint Title',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                  ),
                 ),
               ),
               Text(
                 '${completedSprint.title}',
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 40,
+                  fontSize: 30,
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Text(
-                'Duration',
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 40,
+              Container(
+                margin: EdgeInsets.only(bottom: 20.0),
+                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.lightBlue,
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 8,
+                      color: Colors.black26,
+                      offset: Offset(0, 2),
+                    )
+                  ],
+                ),
+                child: Text(
+                  'Duration',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                  ),
                 ),
               ),
               Text(
-                '${completedSprint.duration}',
+                '${completedSprint.duration} minutes',
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 40,
+                  fontSize: 30,
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Text(
-                'Quote',
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 40,
+              Container(
+                margin: EdgeInsets.only(bottom: 20.0),
+                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.lightBlue,
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 8,
+                      color: Colors.black26,
+                      offset: Offset(0, 2),
+                    )
+                  ],
+                ),
+                child: Text(
+                  'Quote',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                  ),
                 ),
               ),
               Container(
                 height: 50,
                 width: double.infinity,
                 child: Text(
-                  completedSprint.quote,
+                  '" ${completedSprint.quote} "',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 40),
+                  style: TextStyle(fontSize: 30),
                   softWrap: true,
                 ),
               ),
-              Text(
-                'Time Saved',
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 40,
+              Container(
+                margin: EdgeInsets.only(bottom: 20.0),
+                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.lightBlue,
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 8,
+                      color: Colors.black26,
+                      offset: Offset(0, 2),
+                    )
+                  ],
+                ),
+                child: Text(
+                  'Time Saved',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                  ),
                 ),
               ),
               Text(
                 '${completedSprint.dateTime.substring(0, 16)}',
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 40,
+                  fontSize: 30,
                 ),
               ),
             ],

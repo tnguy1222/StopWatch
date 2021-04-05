@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 3.0
-* Sprint Item Widget version 3.0
+* Stop Watch version 4.0
+* Sprint Item Widget version 4.0
 * Jim Nguyen
-* March 7, 2021
+* April 4,2021
 * Sprint Item Widget
 */
 import 'dart:math';

@@ -2,7 +2,7 @@
 * Stop Watch version 3.0
 * Credential Model version 3.0
 * Jim Nguyen
-* March 7, 2021
+* April 4, 2021
 * Credential acts as a Model
 */
 import 'package:flutter/foundation.dart';

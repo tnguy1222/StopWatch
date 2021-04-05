@@ -1,8 +1,8 @@
 /*
-* Stop Watch version 3.0
-* Authentication Screen Screen version 3.0
+* Stop Watch version 4.0
+* Authentication Screen Screen version 4.0
 * Jim Nguyen
-* March 7, 2021
+* April 4,2021
 * Authentication Screen
 */
 import 'package:flutter/material.dart';
@@ -48,7 +48,7 @@ class AuthScreen extends StatelessWidget {
                     child: Container(
                       margin: EdgeInsets.only(bottom: 20.0),
                       padding:
-                          EdgeInsets.symmetric(vertical: 8.0, horizontal: 94.0),
+                          EdgeInsets.symmetric(vertical: 8.0, horizontal: 65.0),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.lightBlue,
