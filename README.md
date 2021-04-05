@@ -2,16 +2,76 @@
 Stop Watch mobile application by Flutter and Firebase
 
 # Introduction
+<p> Nowadays, smartphones are used for communication, work, and entertainment making them an essential item in people’s lives. However, people tend to spend too much time on their phone, and it affects work productivity. </p>
+
+<p> Stop Watch is a cross-platform mobile application for both IOS and Android device that aims to assist user with avoiding distraction from smartphone. It helps user improve time management to increase productivity on studying and working. </p>
 
 # Requirements: 
+<p> Stop Watch has a number of high level functional features as listed: </p>
+	<p> - Register: User can register an account with email and password before login. </p>
+	<p> - Login: User can login with registered account to use the app </p>
+	<p> - Profile Page: User can see their profile with register information. </p>
+	<p> - Add Sprint: User can add a sprint with name, duration and motivating quote. </p>
+	<p> - Sprint: User can start, pause, stop and continue while on a sprint.</p>
+	<p> - Save Sprint: User can save completed sprint and view it in a list. </p>
+<p>Stop Watch has nonfunctional requirement features:  </p>
+	<p> - Navigation bar: User can navigate between pages using the navigation bar. </p>
+	<p> - Navigability: User can easily navigate to the add new sprint under 3 clicks. </p>
 
 # Technological choice: 
+<p> Stop Watch is developed with mobile UI framework Flutter (version 1.20.4) in Dart (version 2.9.2) programming language. The application works with Firebase NoSQL database for backend services. </p>
+<p> Flutter and Dart: Flutter supports mobile application by enabling cross-flatform development from one single codebase deployment. </p>
+<p> Firebase: is a Backend-as-a-Service platform that supports authentication and real-time database storage. </p>
+<p> The application applies best practices by Flutter: </p>
+	<p> - Dividing screen into reusable widgets that promotes reusability and reduce complexity of the program. </p>
+	<p> - Implementing state management to share data between screens using Provider pattern. </p>
+<p> The current version of Stop Watch only works in local environment.</p>
 
 # Technology Implementation: 
 
+<p> All technologies used in this project was learned through Udemy online courses, Flutter documentation: flutter.dev, pub.dev and Firebase documentation page: firebase.google.com. </p>
+<p> I decide to learn and implement these technologies because they are innovated and widely used for mobile application development in the industry. </p>
+
 # Technology approach: 
+<p> 1.The tools and technologies used in this project: <p>
+		
+<p> 2. ER Diagram: </p>
+
+<p> 3. Use Case Diagram: </p>
+
+<p> 4.Site Map Diagram: </p>
+
+<p> 5.Navigation Map Diagram: </p>
+
+<p> 6.Class Diagram: </p>
 
 # Challenges: 
+<table>
+	<thead>
+		<tr>
+			<th> Challenges </th>
+			<th> Challenge Mitigation </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td> Time management </td>
+				<td> Plan feature in details, follow sprint strictly</td>
+			</tr>
+			<tr>
+				<td> Unexperienced in mobile application development</td>
+				<td> Study Udemy material and review documentation for Flutter and Firebase</td>
+			</tr>
+			<tr>
+ 			<td> Lack of knowledge in Flutter and Dart</td>
+				<td> Review study material closely and plan feature ahead of time </td>
+			</tr>
+			<tr>
+				<td> Lack of skill in designing user interface </td>
+				<td> Spend time in designing and review deisgn templates</td>
+			</tr>
+		</tbody> 
+
 
 # Risk Management: 
 <table>
