@@ -34,17 +34,39 @@ Stop Watch mobile application by Flutter and Firebase
 
 # Technology approach: 
 <p> 1.The tools and technologies used in this project: <p>
+	
+<p align="center">
+<image src="stopwatch/Stop Watch Diagram/StopWatch-UsedTechnology.png">
+</p>
 		
-<p> 2. ER Diagram: </p>
+<p> 2. ER Diagram: </p> 
+<p align="center">
+<image src="stopwatch/Stop Watch Diagram/StopWatch-ERDiagram.png">
+</p>
+<p> 3. Use Case Diagram: </p> 
 
-<p> 3. Use Case Diagram: </p>
-
+<p align="center">
+<image src="stopwatch/Stop Watch Diagram/StopWatch-UseCaseDiagram.png">
+</p>
+	
 <p> 4.Site Map Diagram: </p>
 
+<p align="center">
+<image src="stopwatch/Stop Watch Diagram/StopWatch-SiteMap.png">
+</p>
+	
 <p> 5.Navigation Map Diagram: </p>
 
+<p align="center">
+<image src="stopwatch/Stop Watch Diagram/StopWatch-NavigationMap.png">
+</p>
+	
 <p> 6.Class Diagram: </p>
 
+<p align="center">
+<image src="stopwatch/Stop Watch Diagram/StopWatch-UMLDiagram.png">
+</p>
+	
 # Challenges: 
 
 <table>
