@@ -6,7 +6,7 @@ Stop Watch mobile application by Flutter and Firebase
 </p>
 
 <p> Application Demo </p>
-![StopWatch Demo](https://www.loom.com/share/7ef8c97d8f154267a2c4f3ff06facfcc)
+![StopWatchDemo](https://www.loom.com/share/7ef8c97d8f154267a2c4f3ff06facfcc)
 
 # Introduction
 <p> Nowadays, smartphones are used for communication, work, and entertainment making them an essential item in people’s lives. However, people tend to spend too much time on their phone, and it affects work productivity. </p>
