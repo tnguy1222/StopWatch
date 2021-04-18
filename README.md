@@ -5,6 +5,8 @@ Stop Watch mobile application by Flutter and Firebase
 <image src="Diagram/Screen Shot 2021-04-08 at 1.56.59 PM.png">
 </p>
 
+<p> Application Demo </p>
+![](https://www.loom.com/share/7ef8c97d8f154267a2c4f3ff06facfcc)
 # Introduction
 <p> Nowadays, smartphones are used for communication, work, and entertainment making them an essential item in people’s lives. However, people tend to spend too much time on their phone, and it affects work productivity. </p>
 
