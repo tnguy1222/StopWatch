@@ -165,15 +165,41 @@ Stop Watch mobile application by Flutter and Firebase
 <p align="center">
 <image src="Diagram/Screen Shot 2021-04-08 at 2.00.40 PM.png">
 </p>
-	
-Diagram/Screen Shot 2021-04-08 at 2.02.11 PM.png
 
 <p> 4. New Sprint Screen </p>
 
 <p align="center">
 <image src="Diagram/Screen Shot 2021-04-08 at 2.02.11 PM.png">
 </p>
-
 	
+<p> 5. Count Down Screen </p>
+
+<p align="center">
+<image src="Diagram/Screen Shot 2021-04-08 at 2.02.42 PM.png">
+</p>
+	
+<p> End Sprint Alert </p>
+<p align="center">
+<image src="Diagram/Screen Shot 2021-04-08 at 2.04.02 PM.png">
+</p>
+
+<p> Complete Sprint Alert </p>
+<p align="center">
+<image src="Diagram/Screen Shot 2021-04-08 at 2.06.04 PM.png">
+</p>
+	
+<p> 6. Completed Sprints Screen </p>
+
+<p align="center">
+<image src="Diagram/Screen Shot 2021-04-08 at 2.06.30 PM.png">
+</p>
+	
+	
+
+<p> 6. Completed Sprint Detail Screen </p>
+
+<p align="center">
+<image src="Diagram/Screen Shot 2021-04-08 at 2.06.53 PM.png">
+</p>
 	
 
