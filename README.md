@@ -1,6 +1,10 @@
 # StopWatch
 Stop Watch mobile application by Flutter and Firebase
 
+<p align="center">
+<image src="Diagram/Screen Shot 2021-04-08 at 1.56.59 PM.png">
+</p>
+
 # Introduction
 <p> Nowadays, smartphones are used for communication, work, and entertainment making them an essential item in people’s lives. However, people tend to spend too much time on their phone, and it affects work productivity. </p>
 
@@ -141,3 +145,35 @@ Stop Watch mobile application by Flutter and Firebase
 
 # Known Issue:
 <p> 	This application currently has no outstanding issues.  </p>
+
+# User Interface
+
+<p> 1. Login Screen </p>
+
+<p align="center">
+<image src="Diagram/Screen Shot 2021-04-08 at 1.59.28 PM.png">
+</p>
+	
+<p> 2. Register Screen </p>
+
+<p align="center">
+<image src="Diagram/Screen Shot 2021-04-08 at 1.59.51 PM.png">
+</p>
+	
+<p> 3. Dash Board Screen </p>
+
+<p align="center">
+<image src="Diagram/Screen Shot 2021-04-08 at 2.00.40 PM.png">
+</p>
+	
+Diagram/Screen Shot 2021-04-08 at 2.02.11 PM.png
+
+<p> 4. New Sprint Screen </p>
+
+<p align="center">
+<image src="Diagram/Screen Shot 2021-04-08 at 2.02.11 PM.png">
+</p>
+
+	
+	
+
